@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wisdom Booksellers — A Room Full of Stories</title>
+  <meta name="description" content="Wisdom Booksellers is a cozy independent bookshop on Orchard Lane. Browse new arrivals, join our events, and ask us anything." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Fraunces:opsz,wght@9..144,700;9..144,800&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%232B2117'/><text x='16' y='21' text-anchor='middle' font-family='Georgia' font-size='16' fill='%23FDF6E3'>W</text></svg>">
+</head>
+<body>
+  <!-- top ribbon -->
+  <div class="ribbon" role="note" aria-label="Shop notice">
+    <span class="ribbon-dot" aria-hidden="true"></span>
+    Open daily 10am–7pm · 42 Orchard Lane, Willowbridge · Tea & biscuits always on
+    <span class="ribbon-dot" aria-hidden="true"></span>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Wisdom Booksellers home">
+        <span class="brand-mark" aria-hidden="true">W</span>
+        <span class="brand-text">
+          <span class="brand-name">Wisdom</span>
+          <span class="brand-sub">Booksellers · Est. 1987</span>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#arrivals">New Arrivals</a>
+        <a href="#events">Events</a>
+        <a href="#visit">Visit</a>
+        <a href="#contact" class="nav-cta">Ask Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-heading">
+    <div class="hero-media">
+      <!-- Generated with Muse Image: warm bookstore storefront at golden hour -->
+      <img src="assets/hero.svg" alt="Warm interior of Wisdom Booksellers with wooden shelves spilling with books, bay window glowing at golden hour, plants and fairy lights" width="1600" height="900" fetchpriority="high" />
+      <div class="hero-grain" aria-hidden="true"></div>
+    </div>
+    <div class="wrap hero-content">
+      <div class="hero-card">
+        <p class="eyebrow">Independent · Willowbridge · Since 1987</p>
+        <h1 id="hero-heading">A room full of<br><em>stories</em> waiting to<br>find you.</h1>
+        <p class="hero-lede">Come in from the lane. Shelves to get lost in, a window seat for rainy afternoons, and a bookseller who remembers what you read last spring.</p>
+        <div class="hero-actions">
+          <a href="#arrivals" class="btn btn-primary">Browse new arrivals</a>
+          <a href="#events" class="btn btn-ghost">See what's on</a>
+        </div>
+        <p class="hero-note">No algorithms. Just hand-picked books and honest recommendations.</p>
+      </div>
+      <div class="hero-badges" aria-label="Shop highlights">
+        <div class="badge">
+          <span class="badge-icon" aria-hidden="true">✦</span>
+          <span><strong>Staff picks</strong> refreshed weekly</span>
+        </div>
+        <div class="badge">
+          <span class="badge-icon" aria-hidden="true">♡</span>
+          <span><strong>Curated second-hand</strong> corner</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO STRIP -->
+  <section class="intro">
+    <div class="wrap intro-grid">
+      <p class="intro-pull">“We believe a good bookshop is a <em>neighbourhood living room</em> — a little untidy, very welcoming, and full of conversations you didn’t know you needed.”</p>
+      <div class="intro-meta">
+        <p class="intro-by">— Mara & Jonah, booksellers</p>
+        <p class="intro-detail">Family-run, dog-friendly, and always happy to order anything we don’t have on the shelf. Bring a tote, stay for tea.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEW ARRIVALS 6x2 -->
+  <section class="section arrivals" id="arrivals" aria-labelledby="arrivals-heading">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Fresh on the shelves</p>
+          <h2 id="arrivals-heading">New arrivals</h2>
+          <p class="section-lede">Twelve just-in books we’ve been pressing into customers’ hands. Each cover pulled from the press — no two quite the same.</p>
+        </div>
+        <div class="section-acts">
+          <p class="small-muted">Tap a cover to peek inside</p>
+        </div>
+      </div>
+
+      <div class="books-grid" id="booksGrid" role="list" aria-label="New arrival books">
+        <!-- Populated by JS for easy editing, but static fallback included -->
+      </div>
+      <p class="arrivals-foot">All first editions where noted. Second-hand treasures marked with a <span class="pill">★ Second-hand</span></p>
+    </div>
+  </section>
+
+  <!-- DIVIDER -->
+  <div class="wrap"><hr class="ornate" aria-hidden="true" /></div>
+
+  <!-- EVENTS -->
+  <section class="section events" id="events" aria-labelledby="events-heading">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Gather around the table</p>
+          <h2 id="events-heading">Upcoming events</h2>
+          <p class="section-lede">Small rooms, big conversations. Free, but seats go fast — pop in or drop us a note.</p>
+        </div>
+      </div>
+
+      <div class="events-grid" id="eventsGrid">
+        <!-- 3 events injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section class="section visit" id="visit" aria-labelledby="visit-heading">
+    <div class="wrap visit-card">
+      <div class="visit-text">
+        <p class="eyebrow">Come find us</p>
+        <h2 id="visit-heading">42 Orchard Lane, Willowbridge</h2>
+        <p>Between the bakery and the canal. Look for the green awning and the trolley of £3 paperbacks that always spills onto the pavement.</p>
+        <dl class="hours">
+          <dt>Hours</dt>
+          <dd>Mon–Sat 10am–7pm · Sun 11am–5pm</dd>
+          <dt>Phone</dt>
+          <dd><a href="tel:+44-20-7946-0958">020 7946 0958</a></dd>
+          <dt>Email</dt>
+          <dd><a href="mailto:hello@wisdombooksellers.example">hello@wisdombooksellers.example</a></dd>
+        </dl>
+        <p class="small-muted visit-note">Dogs, prams and lingering encouraged. If the door’s ajar, we’re open — even if the sign says otherwise.</p>
+      </div>
+      <div class="visit-map" aria-label="Map sketch">
+        <div class="map-sketch">
+          <div class="map-street">Orchard Lane</div>
+          <div class="map-block bakery">Bakery</div>
+          <div class="map-block shop">Wisdom</div>
+          <div class="map-block canal">Canal</div>
+          <div class="map-pin" aria-hidden="true">✦<span>We are here</span></div>
+          <div class="map-legend">Canal · Willowbridge · No.42</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact" aria-labelledby="contact-heading">
+    <div class="wrap contact-grid">
+      <div class="contact-intro">
+        <p class="eyebrow">Ask a bookseller</p>
+        <h2 id="contact-heading">Have a question?</h2>
+        <p>Looking for a half-remembered title, a gift for a reluctant reader, or whether we have the new essay collection in? Send us a short note — we read every message ourselves (usually with a mug in hand).</p>
+        <ul class="contact-points">
+          <li>We reply within a day — often within the hour</li>
+          <li>We’ll hold books for you at the counter, no deposit</li>
+          <li>Prefer to chat? Call or just wander in</li>
+        </ul>
+        <p class="small-muted">This is a demo form — messages don’t leave your browser, but it behaves like the real thing.</p>
+      </div>
+
+      <form id="contactForm" class="form" novalidate aria-describedby="formNote">
+        <div class="field">
+          <label for="cName">Your name</label>
+          <input id="cName" name="name" type="text" autocomplete="name" placeholder="A. Reader" required aria-required="true" />
+          <span class="field-error" id="errName" role="alert"></span>
+        </div>
+        <div class="field">
+          <label for="cEmail">Email</label>
+          <input id="cEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com" required aria-required="true" />
+          <span class="field-error" id="errEmail" role="alert"></span>
+        </div>
+        <div class="field">
+          <label for="cMsg">Your question <span class="optional">(keep it short, we like short)</span></label>
+          <textarea id="cMsg" name="question" rows="4" maxlength="300" placeholder="e.g. Do you have a good novel about lighthouses for my dad? He loves sea stories." required aria-required="true"></textarea>
+          <div class="field-meta">
+            <span class="field-error" id="errMsg" role="alert"></span>
+            <span class="charcount" id="charCount" aria-live="polite">0 / 300</span>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Send your question</button>
+        <p id="formNote" class="small-muted form-note">By sending, you agree we can reply by email. We never share your address.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="footer-brand">Wisdom Booksellers</p>
+        <p class="small-muted">42 Orchard Lane, Willowbridge, WB3 4AL<br>© 2026 Wisdom Booksellers. Printed on uncoated paper, in spirit.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#arrivals">New Arrivals</a>
+        <a href="#events">Events</a>
+        <a href="#visit">Visit</a>
+        <a href="#contact">Ask Us</a>
+      </div>
+      <p class="footer-colophon">Typeset in Fraunces, Cormorant & Lora. Hero illustration generated with Muse Image. Covers hand-set in the shop’s back room.</p>
+    </div>
+  </footer>
+
+  <!-- toast -->
+  <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true" hidden>
+    <p class="toast-title">Message sent — thank you!</p>
+    <p class="toast-body">We’ve got your note <span id="toastName"></span>. We’ll reply soon — and save a bookmark for you.</p>
+    <button type="button" class="toast-close" aria-label="Dismiss message">×</button>
+  </div>
+
+  <!-- detail modal -->
+  <dialog id="bookDialog" class="book-dialog" aria-labelledby="dialogTitle">
+    <button type="button" class="dialog-close" aria-label="Close">×</button>
+    <div class="dialog-body">
+      <div id="dialogCover" class="dialog-cover"></div>
+      <div>
+        <p class="eyebrow" id="dialogEyebrow"></p>
+        <h3 id="dialogTitle"></h3>
+        <p id="dialogAuthor" class="small-muted"></p>
+        <p id="dialogBlurb"></p>
+        <p class="pill" id="dialogTag" hidden></p>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>

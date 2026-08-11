@@ -1,0 +1,13 @@
+{
+  "name": "wisdom-booksellers",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 8787 --host",
+    "build": "vite build",
+    "preview": "vite preview --port 8787 --host"
+  },
+  "devDependencies": {
+    "vite": "^8.2.1"
+  }
+}
